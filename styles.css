@@ -71,16 +71,12 @@ th,td{
   }
   
   .list-item-inlines {
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-block;
     width: 2rem;
     margin: auto;
   }
-  .social-links{
-       
-  }
+ 
   .links .fa-brands{
-    
     color: white;
     font-size: 1.2rem;
     transition: .2s;
