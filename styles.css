@@ -10,6 +10,7 @@
     margin: auto;
 }
 h1{
+    margin-top: auto;
     font-size: 3rem;
     color: var(--primary-color);
 }
@@ -53,19 +54,6 @@ button:active{
     transform: scale(0.98);
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
-table{
-    border: 2px solid var(--primary-color);
-}
-caption{
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-th,td{
-    border: 1px solid black;
-    width: 2rem;
-    height: 3rem;
-}
 
 .footer{
     position: fixed;
@@ -105,3 +93,30 @@ th,td{
   .links .fa-brands:hover {
     color: var(--primary-color);
   }
+
+#note-table{
+    border: 2px solid var(--primary-color);
+}
+.table-caption{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.table-data{
+    border: 2px solid var(--primary-color);
+    width: 4rem;
+    height: 3rem;
+    font-size: 1.2rem;
+}
+.t-head{
+    font-weight: bolder;
+    font-size: 1.2rem;
+    width: 5rem;
+}
+.notes{
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: red;
+    background-color: #d1fae5;
+}

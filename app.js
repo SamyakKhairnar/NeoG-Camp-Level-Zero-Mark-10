@@ -1,19 +1,14 @@
 const billAmount = document.querySelector("#bill-amount");
+const nextButton = document.querySelector("#next-btn");
 const cashGiven = document.querySelector("#cash-given");
 const cashGivenTab = document.querySelector("#cash-given-label")
 const message = document.querySelector("#error-message");
-const nextButton = document.querySelector("#next-btn");
-const checkButton = document.querySelector("#check-button");
+const checkButton = document.querySelector("#check-btn");
 const tableTab = document.querySelector("#notes-table")
 const returnBalance = document.querySelector("#return");
 const numberofNotes = document.querySelectorAll(".notes");
 
 const availableNotes = [2000, 500, 200, 100, 50, 20, 10, 5, 1];
-
-hideMessage();
-hideCash();
-hideTable();
-nextButton.addEventListener("click", nextHandler);
 
 function nextHandler() {
     if (billAmount.value > 0) {
@@ -26,9 +21,9 @@ function nextHandler() {
 }
 
 function clickHandler() {
-        hideMessage();
+    
     if (cashGiven.value >= billAmount.value) {
-        const amountToBeReturned = cashGiven.value - billAmount.value;
+        var amountToBeReturned = cashGiven.value - billAmount.value;
         returnBalance.innerText = "Rs. " + amountToBeReturned;
         calculateChange(amountToBeReturned);
         showTable();
@@ -40,10 +35,10 @@ function clickHandler() {
  
 
 function calculateChange(amount) {
-    for (i = 0; i < availableNotes.length; i++) {
-      const numberofNotes = Math.trunc(amount / availableNotes[i]);
+    for (var i = 0; i < availableNotes.length; i++) {
+      var Notes = Math.trunc(amount / availableNotes[i]);
       amount %= availableNotes[i];
-      numberofNotes[i].innerText = numberofNotes;
+      numberofNotes[i].innerText = Notes;
     }
 }
 

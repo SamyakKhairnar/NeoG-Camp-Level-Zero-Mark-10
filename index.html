@@ -15,42 +15,42 @@
         <p>Enter the Bill Amount and Cash given by the Customer and know Minimum Number of Notes to Return Back.</p>
         
         <label for="bill-amount">Bill amount</label>
-        <input id="bill-amount" placeholder="Enter Amount" type="number" required>
+        <input id="bill-amount" placeholder="Enter Amount" type="number">
 
         <button id="next-btn">Next</button>
         
         <label id="cash-given-label" for="cash-given">Cash Given</label>
         <input id="cash-given" placeholder="Enter Amount" type="number">
 
-        <h2 id="error-message"></h2>
+        <h2 id="error"></h2>
 
         <button id="check-btn">Check</button>
 
         <table id="notes-table">
-            <caption>Amount to be Returned Back :- <span id="return"></span></caption>
+            <caption class="table-caption">Amount to be Returned Back :- <span id="return"></span></caption>
             <tr>
-                <th>Notes</th>
-                <td>2000</td>
-                <td>500</td>
-                <td>200</td>
-                <td>100</td>
-                <td>50</td>
-                <td>20</td>
-                <td>10</td>
-                <td>5</td>
-                <td>1</td>
+                <th class="table-data t-head">Notes</th>
+                <td class="table-data">2000</td>
+                <td class="table-data">500</td>
+                <td class="table-data">200</td>
+                <td class="table-data">100</td>
+                <td class="table-data">50</td>
+                <td class="table-data">20</td>
+                <td class="table-data">10</td>
+                <td class="table-data">5</td>
+                <td class="table-data">1</td>
             </tr>
             <tr>
-                <th>No. of Notes</th>
-                <td class="notes"></td>
-                <td class="notes"></td>
-                <td class="notes"></td>
-                <td class="notes"></td>
-                <td class="notes"></td>
-                <td class="notes"></td>
-                <td class="notes"></td>
-                <td class="notes"></td>
-                <td class="notes"></td>
+                <th class="table-data t-head">No. of Notes</th>
+                <td class="notes table-data"></td>
+                <td class="notes table-data"></td>
+                <td class="notes table-data"></td>
+                <td class="notes table-data"></td>
+                <td class="notes table-data"></td>
+                <td class="notes table-data"></td>
+                <td class="notes table-data"></td>
+                <td class="notes table-data"></td>
+                <td class="notes table-data"></td>
             </tr>
         </table>
     </div>
@@ -80,6 +80,6 @@
             </li>
           </ul>
       </div>
-      checkButton<script src="/app.js"></script>
+    <script src="/index.js"></script>
 </body>
 </html>
