@@ -15,15 +15,19 @@
         <p>Enter the Bill Amount and Cash given by the Customer and know Minimum Number of Notes to Return Back.</p>
         
         <label for="bill-amount">Bill amount</label>
-        <input id="bill-amount" placeholder="Enter Amount" type="number">
+        <input id="bill-amount" placeholder="Enter Amount" type="number" required>
+
+        <button id="next-btn">Next</button>
         
-        <label for="cash-given">Cash Given</label>
+        <label id="cash-given-label" for="cash-given">Cash Given</label>
         <input id="cash-given" placeholder="Enter Amount" type="number">
+
+        <h2 id="error-message"></h2>
 
         <button id="check-btn">Check</button>
 
-        <table>
-            <caption>Amount to be Returned Back</caption>
+        <table id="notes-table">
+            <caption>Amount to be Returned Back :- <span id="return"></span></caption>
             <tr>
                 <th>Notes</th>
                 <td>2000</td>
@@ -76,6 +80,6 @@
             </li>
           </ul>
       </div>
-
+      checkButton<script src="/app.js"></script>
 </body>
 </html>

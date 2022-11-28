@@ -1,4 +1,6 @@
-
+:root{
+    --primary-color: #10b981;
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -9,6 +11,7 @@
 }
 h1{
     font-size: 3rem;
+    color: var(--primary-color);
 }
 p{
     width: 25vw;
@@ -16,24 +19,42 @@ p{
     margin-top: -2rem;
 }
 label{
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 input{
+    font-size: 1rem;
+    border: 4px solid var(--primary-color);
     margin: auto;
     height: 2.5rem;
     margin-top: -1.2rem;
-    width: 25vw;
+    width: 20vw;
     border-radius: 5px;
 }
 button{
     margin: auto;
-    width: 10vw;
+    width: 8vw;
     height: 2.5rem;
     border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all;
+}
+button:hover{
+    background-color: #d1fae5;
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+}
+button:active{
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
 table{
-    border: 2px solid black;
+    border: 2px solid var(--primary-color);
 }
 caption{
     font-size: 1.5rem;
@@ -82,5 +103,5 @@ th,td{
     transition: .2s;
   }
   .links .fa-brands:hover {
-    color: #06b6d4;
+    color: var(--primary-color);
   }
