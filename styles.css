@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins&display=swap');
 :root{
     --primary-color: #10b981;
+}
+body{
+    font-family: 'Orbitron', sans-serif;
 }
 .container{
     display: flex;
@@ -15,6 +19,7 @@ h1{
     color: var(--primary-color);
 }
 p{
+    font-family: 'Poppins', sans-serif;
     width: 25vw;
     margin: auto;
     margin-top: -2rem;
@@ -53,6 +58,35 @@ button:hover{
 button:active{
     transform: scale(0.98);
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+#note-table{
+    border: 2px solid var(--primary-color);
+}
+.table-caption{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.table-data{
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid var(--primary-color);
+    width: 4rem;
+    height: 3rem;
+    font-size: 1.2rem;
+}
+.t-head{
+    font-weight: bolder;
+    font-size: 1.2rem;
+    width: 5rem;
+}
+.notes{
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: red;
+    background-color: #d1fae5;
 }
 
 .footer{
@@ -94,29 +128,3 @@ button:active{
     color: var(--primary-color);
   }
 
-#note-table{
-    border: 2px solid var(--primary-color);
-}
-.table-caption{
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.table-data{
-    border: 2px solid var(--primary-color);
-    width: 4rem;
-    height: 3rem;
-    font-size: 1.2rem;
-}
-.t-head{
-    font-weight: bolder;
-    font-size: 1.2rem;
-    width: 5rem;
-}
-.notes{
-    font-weight: 700;
-    font-size: 1.4rem;
-    color: red;
-    background-color: #d1fae5;
-}

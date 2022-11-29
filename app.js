@@ -2,7 +2,7 @@ const billAmount = document.querySelector("#bill-amount");
 const nextButton = document.querySelector("#next-btn");
 const cashGiven = document.querySelector("#cash-given");
 const cashGivenTab = document.querySelector("#cash-given-label")
-const message = document.querySelector("#error-message");
+const message = document.querySelector("#error");
 const checkButton = document.querySelector("#check-btn");
 const tableTab = document.querySelector("#notes-table")
 const returnBalance = document.querySelector("#return");
@@ -22,7 +22,7 @@ function nextHandler() {
 
 function clickHandler() {
     
-    if (cashGiven.value >= billAmount.value) {
+    if (parseInt(cashGiven.value) >= parseInt(billAmount.value)) {
         var amountToBeReturned = cashGiven.value - billAmount.value;
         returnBalance.innerText = "Rs. " + amountToBeReturned;
         calculateChange(amountToBeReturned);
