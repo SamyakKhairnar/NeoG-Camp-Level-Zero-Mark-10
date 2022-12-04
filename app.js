@@ -22,13 +22,19 @@ function nextHandler() {
 
 function clickHandler() {
     
-    if (parseInt(cashGiven.value) >= parseInt(billAmount.value)) {
+    if(parseInt(cashGiven.value) < 0 || parseInt(billAmount.value) < 0 ){
+        showMessage("Amount should be greater than zero!");
+        hideTable();
+    }
+    else if (parseInt(cashGiven.value) >= parseInt(billAmount.value)) {
         var amountToBeReturned = cashGiven.value - billAmount.value;
         returnBalance.innerText = "Rs. " + amountToBeReturned;
         calculateChange(amountToBeReturned);
         showTable();
+        hideMessage();
     } else {
         showMessage("Do you wanna wash dishes?");
+        hideTable();
     }
 }
 
