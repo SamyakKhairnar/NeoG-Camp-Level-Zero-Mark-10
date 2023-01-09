@@ -69,6 +69,10 @@ button:active{
     font-weight: 600;
     margin-bottom: 1rem;
 }
+.return{
+    color: red;
+    font-weight: bold;
+}
 
 .table-data{
     font-family: 'Poppins', sans-serif;
@@ -128,3 +132,36 @@ button:active{
     color: var(--primary-color);
   }
 
+  @media only screen and (max-width: 600px){
+      .container{
+        width: 95%;
+      }
+      h1{
+          font-size: xx-large;
+          margin-bottom: 2rem;
+      }
+      p{
+          font-size: large;
+          width: auto;
+          margin-bottom: 2rem;
+      }
+      label{
+          font-size: larger;
+      }
+      input{
+          width: 50%;
+      }
+      button{
+          font-size: larger;
+          width: auto;
+      }
+      .table-caption{
+          font-size: larger;
+      }
+      .t-head, .table-data{
+          font-size: large;
+      }
+      .footer{
+          height: auto;
+      }
+  }
