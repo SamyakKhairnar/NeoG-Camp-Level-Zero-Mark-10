@@ -161,6 +161,9 @@ button:active{
       .t-head, .table-data{
           font-size: large;
       }
+      .tbl{
+          margin-bottom: 6rem;
+      }
       .footer{
           height: auto;
       }
